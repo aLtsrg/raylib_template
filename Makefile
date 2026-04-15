@@ -1,7 +1,7 @@
 .PHONY: clean
 
 CXX := g++
-CXXFLAGS := -Wall -Werror -Wpedantic -Wconversion -ggdb 
+CXXFLAGS := -ggdb -Wall -Wextra -Wpedantic -Wconversion
 
 LDLIBS := -lraylib
 
@@ -12,4 +12,4 @@ $(EXE): $(SRC)
 	 $(CXX) $(SRC) -o $(EXE) $(CXXFLAGS) $(LDLIBS) 
 
 clean:
-	rm -f main compile_commands.json
+	rm -f $(EXE) compile_commands.json

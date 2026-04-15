@@ -15,7 +15,7 @@ int main()
         BeginDrawing();
 
             ClearBackground(DARKGRAY);
-            DrawText("Hello, World!", 50, 50, 40, RAYWHITE);
+            DrawText("Hello, World!", 10, Height * 0.5, 40, RAYWHITE);
 
         EndDrawing();
     }
